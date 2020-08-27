@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="knockout-min.js"></script>
+<script src="tinymce/tinymce.min.js"></script>
+<script src="tinymce/jquery.tinymce.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/qiu5z2v4blb5bj2osks7butrjd3q4ms2rrnht9tfoa277k6j/tinymce/5/plugins.min.js?powerpaste=sdk&advcode=sdk&tinycomments=sdk&advtable=sdk&a11ychecker=sdk&formatpainter=sdk&permanentpen=sdk&checklist=sdk&casechange=sdk" referrerpolicy="origin"></script>  
+
+<body>
+    <textarea id="selector"></textarea>
+</body>
+
+<script>
+    $('textarea#selector').tinymce({
+        height: 500,
+        menubar: false,
+        plugins: [
+        'tinymcespellchecker'
+        ],
+        toolbar: "undo redo |fontselect fontsizeselect | bold italic underline | spellchecker language spellcheckdialog |"
+      });
+</script>
+</html>
